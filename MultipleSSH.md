@@ -41,15 +41,15 @@ Then added
 
 	#activehacker account
 	Host github.com-activehacker
-		HostName github.com
-		User git
-		IdentityFile ~/.ssh/id_rsa_activehacker
+	HostName github.com
+	User git
+	IdentityFile ~/.ssh/id_rsa_activehacker
 
 	#jexchan account
 	Host github.com-jexchan
-		HostName github.com
-		User git
-		IdentityFile ~/.ssh/id_rsa_jexchan
+	HostName github.com
+	User git
+	IdentityFile ~/.ssh/id_rsa_jexchan
 
 
 Clone you repo and modify your Git config
