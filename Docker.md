@@ -142,3 +142,13 @@ wait      Block until a container stops, then print its exit code</pre>
 Для просмотра общей справки Docker используйте следующую команду:
 
 <pre>docker info</pre>
+
+##[Docker compose](https://docs.docker.com/compose/install/#install-compose)
+ 
+For install docker-compose you need:
+<pre>sudo curl -L https://github.com/docker/compose/releases/download/1.19.0/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose</pre>
+
+And for give access to execute docker-compose command need:
+<pre>sudo chmod +x /usr/local/bin/docker-compose</pre>
+
+<small>[Guide](https://docs.docker.com/compose/gettingstarted/) for detail learning</small>
