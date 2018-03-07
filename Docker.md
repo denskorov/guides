@@ -152,3 +152,8 @@ And for give access to execute docker-compose command need:
 <pre>sudo chmod +x /usr/local/bin/docker-compose</pre>
 
 <small>[Guide](https://docs.docker.com/compose/gettingstarted/) for detail learning</small>
+
+###For more comfortable use docker, include this command to your system. After you can use name container in browser address line.
+
+<pre>sed -i.old -r '/docker-ips/d' /etc/hosts
+docker inspect -f "{{.NetworkSettings.IPAddress}}   {{.Name}}   #docker-ips" $(docker ps -q) | sed -e 's/\///' >> /etc/hosts</pre>
